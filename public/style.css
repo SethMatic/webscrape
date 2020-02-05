@@ -1,5 +1,5 @@
 body {
-    background-color: #F2F6D0
+    background-color:lightcoral
 }
 
 #wrapper {
@@ -14,6 +14,7 @@ body {
     overflow: auto;
     width: 60%;
     height: 700px;
+    font-family: 'Times New Roman', Times, serif
 }
 
 #notes {
