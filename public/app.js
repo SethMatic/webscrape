@@ -18,12 +18,12 @@ $.getJSON("/articles", function(data) {
  
     $.ajax({
       method: "GET",
-      url: "/articles/" + thisId
+      url: "/articlesg" + thisId
     })
     
       .then(function(data) {
         console.log(data);
-       // title of the article
+       // title 
         $("#notes").append("<h2>" + data.title + "</h2>");
      
         $("#notes").append("<input id='titleinput' name='title' >");
@@ -44,7 +44,7 @@ $.getJSON("/articles", function(data) {
   
  
   $(document).on("click", "#savenote", function() {
-    // Grab the id associated with the article from the submit button
+   
     var thisId = $(this).attr("data-id");
   
     // request to change the note
